@@ -29,7 +29,7 @@
         <h3>Новости:</h3>
 
         <?php
-        foreach ($this->data['news'] as $post) {
+        foreach ($this->news as $post) {
             echo '<div class="post">';
             $post->printPost();
             echo '</div>';

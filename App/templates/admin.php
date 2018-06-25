@@ -44,7 +44,7 @@
 
     <h3>Новости:</h3>
     <?php
-    foreach ($this->data['news'] as $post) {
+    foreach ($this->news as $post) {
         echo '<div class="post">';
         echo '<h4>#' . $post->id . '</h4>' ;
         echo '<form method="post" action="Scripts/save.php">';

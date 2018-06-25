@@ -8,18 +8,17 @@
 
 namespace App;
 
+use App\Models\MagicTrait;
+
 class View
 {
-    protected $data = [];
 
-    public function __construct()
-    {
-    }
+    use MagicTrait;
 
-    public function assign($name, $value) {
-        $this->data[$name] = $value;
-        return $this;
-    }
+//    public function assign($name, $value) {
+//        $this->data[$name] = $value;
+//        return $this;
+//    }
 
     public function display($template) {
         include $template;
